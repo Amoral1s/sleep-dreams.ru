@@ -1,0 +1,169 @@
+@media (min-width: 992px) {
+  .news-wrap-item {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+  .news-wrap-item:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-color: #CEB59A;
+    border-color: #CEB59A;
+    color: #fff;
+  }
+  .news-wrap-item:hover h3, .news-wrap-item:hover p, .news-wrap-item:hover .date {
+    color: #fff;
+  }
+  .features-wrap-item:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-color: #CEB59A;
+  }
+  .features-wrap-item:hover h3, .features-wrap-item:hover p {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: #fff;
+  }
+  .woocommerce ul.products li.product:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-color: #CEB59A;
+  }
+  .woocommerce ul.products li.product:hover h2 {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    color: #fff;
+  }
+  .woocommerce ul.products li.product:hover .price {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+  .woocommerce ul.products li.product:hover .price span {
+    color: #fff;
+  }
+  .woocommerce ul.products li.product:hover .price span bdi {
+    color: #fff;
+  }
+  .header-icons .icon-search:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-image: url(../img/icons/search-hover.svg);
+  }
+  .header-icons .icon-login:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-image: url(../img/icons/login-hover.svg);
+  }
+  .header-icons .icon-like:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-image: url(../img/icons/like-hover.svg);
+  }
+  .header-icons .icon-cart:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-image: url(../img/icons/cart-hover.svg);
+  }
+  .cats-item {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .cats-item:hover::after {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 1;
+  }
+  .cats-item:hover .button.button-cats {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    width: 200px;
+  }
+  .button-cats {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .button-cats:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #004A2B;
+  }
+  .button-offer {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .button-offer:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    background-color: #004A2B;
+    color: #fff;
+  }
+  .header-icons-item {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .header-icons-item:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .header-icons-item:hover span {
+    color: #CEB59A;
+  }
+  .header-logo {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .header-logo:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    background-image: url(../img/logo-hover.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+  }
+  .header-logo:hover img {
+    opacity: 0;
+  }
+  .header-catalog {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .header-catalog:hover {
+    background-color: #CEB59A;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  a {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  a:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #CEB59A;
+  }
+}

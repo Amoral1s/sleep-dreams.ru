@@ -1,0 +1,98 @@
+@import 'vars'
+
+@media (min-width: 992px) 
+  .news-wrap-item
+    transition: .2s
+    &:hover
+      transition: .2s
+      background-color: $accent
+      border-color: $accent
+      color: #fff
+      h3, p, .date
+        color: #fff
+  .features-wrap-item:hover
+    transition: .2s
+    background-color: $accent
+    h3, p
+      transition: .2s
+      color: #fff
+  .woocommerce
+    ul.products
+      li.product
+        &:hover
+          transition: .2s
+          background-color: $accent
+          h2
+            transition: .2s
+            color: #fff
+          .price
+            transition: .2s
+            span
+              color: #fff
+              bdi
+                color: #fff
+  .header
+    &-icons
+      .icon-search
+        &:hover
+          transition: .2s
+          background-image: url(../img/icons/search-hover.svg)
+      .icon-login
+        &:hover
+          transition: .2s
+          background-image: url(../img/icons/login-hover.svg)
+      .icon-like
+        &:hover
+          transition: .2s
+          background-image: url(../img/icons/like-hover.svg)
+      .icon-cart
+        &:hover
+          transition: .2s
+          background-image: url(../img/icons/cart-hover.svg)
+  .cats-item
+    transition: 0.2s
+    &:hover
+      &::after
+        transition: 0.2s
+        opacity: 1
+      .button.button-cats
+        transition: 0.2s
+        width: 200px
+  .button
+    &-cats
+      transition: 0.2s
+      &:hover
+        transition: 0.2s
+        color: $main
+        
+    &-offer
+      transition: 0.2s
+      &:hover 
+        transition: 0.2s
+        background-color: $main
+        color: #fff
+  .header-icons-item
+    transition: 0.2s
+    &:hover
+      transition: 0.2s
+      span
+        color: $accent
+  .header-logo
+    transition: 0.2s
+    &:hover
+      transition: 0.2s
+      background-image: url(../img/logo-hover.svg)
+      background-repeat: no-repeat
+      background-size: contain
+      img
+        opacity: 0
+  .header-catalog
+    transition: 0.2s
+    &:hover
+      background-color: $accent
+      transition: 0.2s
+  a
+    transition: 0.2s
+    &:hover
+      transition: 0.2s
+      color: $accent

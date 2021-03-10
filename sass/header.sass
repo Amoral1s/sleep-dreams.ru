@@ -1,0 +1,124 @@
+@import 'vars'
+@import 'reset'
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 35px
+  padding-bottom: 35px
+  &-logo
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  &-catalog
+    background-color: $main
+    border-radius: 10px
+    color: #fff
+    padding: 12px 25px
+    display: flex
+    align-items: center
+    cursor: pointer
+    font-size: 18px
+    user-select: none
+    .burger
+      margin-right: 25px
+      width: 20px
+      height: 20px
+      position: relative
+      span
+        position: absolute
+        left: 0
+        top: 0
+        height: 2px
+        width: 25px
+        background-color: #fff
+        transition: 0.2s
+        &:nth-child(2)
+          top: 9px
+        &:nth-child(3)
+          top: 18px
+    &-active
+      .burger
+        span
+          transition: 0.2s
+        span:nth-child(1)
+          transform: rotate(45deg)
+          left: 0px
+          top: 9px
+        span:nth-child(2)
+          transform: rotate(135deg)
+          left: 0px
+          top: 9px
+        span:nth-child(3)
+          transform: rotate(-45deg)
+          left: 0px
+          top: 9px
+  &-nav
+    display: flex
+    justify-content: space-between
+    &-menu
+      display: flex
+      align-items: center
+      justify-content: center
+      li
+        margin: 0 15px
+        a
+          font-size: 15px
+  &-icons
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &-item
+      height: 23px
+      width: 23px
+      margin: 0 12px
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: contain
+      cursor: pointer
+      transition: .2s
+      &:last-child
+        margin-right: 0
+    .icon-search
+      background-image: url(../img/icons/search.svg)
+    .icon-login
+      background-image: url(../img/icons/login.svg)
+    .icon-like
+      background-image: url(../img/icons/like.svg)
+    .icon-cart
+      background-image: url(../img/icons/cart.svg)
+      position: relative
+      span
+        position: absolute
+        right: -7px
+        top: -7px
+        font-size: 10px
+        color: $dark
+
+.offer
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 150px 100px 170px 100px
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 25px
+  background-image: url(../img/header.jpg)
+  max-width: 1170px
+  h1
+    font-size: 48px
+    max-width: 430px
+    margin-bottom: 15px
+    color: $main
+    font-family: $title, sans-serif
+  p
+    color: $main
+    font-family: $font
+    font-size: 24px
+    margin-bottom: 25px
+
+@import "header/_media1200"
+@import "header/_media992"
+@import "header/_media768"
+@import "header/_media578"
