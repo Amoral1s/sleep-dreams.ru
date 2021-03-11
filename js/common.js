@@ -1,16 +1,19 @@
-jQuery(document).ready(function ($) {
+/* jQuery(document).ready(function ($) { */
+document.addEventListener('DOMContentLoaded', () => {    
 
     
     const headerCatalog = document.querySelector('.header-catalog');
     headerCatalog.addEventListener('click', () => {
         headerCatalog.classList.toggle('header-catalog-active');
     });
+
+
   
 
 
 
 
-  $('select').addClass('select');
+  /* $('select').addClass('select');
 
   $('.select').each(function() {
     const _this = $(this),
@@ -66,6 +69,6 @@ jQuery(document).ready(function ($) {
             selectList.slideUp(duration);
         }
     });
-  });
+  }); */
 
 });

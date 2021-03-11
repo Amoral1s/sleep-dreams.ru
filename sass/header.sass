@@ -1,12 +1,22 @@
 @import 'vars'
 @import 'reset'
 
+body
+  padding-top: 100px
 .header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding-top: 35px
-  padding-bottom: 35px
+  padding-top: 25px
+  padding-bottom: 25px
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  background-color: #fff
+  z-index: 50
+  width: 100%
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
   &-logo
     display: flex
     align-items: center
