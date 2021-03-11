@@ -1,4 +1,26 @@
 @media (min-width: 992px) {
+  .blog-wrap-item {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+  .blog-wrap-item:hover {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-color: #CEB59A;
+    border-color: #CEB59A;
+    color: #fff;
+  }
+  .blog-wrap-item:hover span {
+    color: #fff;
+  }
+  .blog-wrap-item:hover span::after {
+    background-image: url(../img/icons/arr-right-hover.svg);
+  }
+  .blog-wrap-item:hover h3, .blog-wrap-item:hover p {
+    color: #fff;
+  }
   .news-wrap-item {
     -webkit-transition: .2s;
     -o-transition: .2s;

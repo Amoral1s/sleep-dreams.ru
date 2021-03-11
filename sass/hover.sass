@@ -1,6 +1,19 @@
 @import 'vars'
 
 @media (min-width: 992px) 
+  .blog-wrap-item
+    transition: .2s
+    &:hover
+      transition: .2s
+      background-color: $accent
+      border-color: $accent
+      color: #fff
+      span
+        color: #fff
+        &::after
+          background-image: url(../img/icons/arr-right-hover.svg)
+      h3, p
+        color: #fff
   .news-wrap-item
     transition: .2s
     &:hover

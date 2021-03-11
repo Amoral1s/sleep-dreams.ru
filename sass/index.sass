@@ -4,8 +4,6 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding-top: 20px
-  padding-bottom: 15px
   &-item
     display: flex
     justify-content: space-between
@@ -49,8 +47,7 @@
 .popular
   display: flex
   flex-direction: column
-  padding-top: 35px
-  padding-bottom: 0
+  padding-top: 40px
 .woocommerce
   ul.products
     display: flex
@@ -92,7 +89,6 @@
         margin-right: 0
 
 .features
-  padding-top: 25px
   &-wrap
     display: flex
     justify-content: space-between
@@ -103,6 +99,7 @@
       width: calc(25% - 15px)
       padding: 15px 25px 25px 25px
       transition: .2s
+      margin-bottom: 20px
       p
         color: $text
       h3
@@ -125,6 +122,7 @@
       width: calc(50% - 10px)
       overflow: hidden
       padding-bottom: 25px
+      margin-bottom: 20px
       h3
         font-size: 24px
         font-family: $font
@@ -147,6 +145,61 @@
         object-fit: cover
         border-radius: 25px 25px 0 0
         height: 250px
+
+.blog
+  padding-bottom: 20px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    &-item
+      border-radius: 25px
+      border: 1px solid $light
+      display: flex
+      flex-direction: column
+      width: calc(33.3% - 10px)
+      overflow: hidden
+      padding-bottom: 20px
+      margin-bottom: 20px
+      span
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-top: 0px
+        padding-left: 20px
+        padding-right: 40px
+        color: $accent
+        position: relative
+        &::after
+          position: absolute
+          content: ''
+          top: 50%
+          right: 20px
+          transform: translateY(-50%)
+          height: 10px
+          width: 12px
+          background-image: url(../img/icons/arr-right.svg)
+      h3
+        font-size: 24px
+        font-family: $font
+        font-weight: 700
+        padding-left: 20px
+        padding-right: 20px
+        margin-bottom: 10px
+        padding-top: 20px
+      p
+        color: $text
+        padding-left: 20px
+        padding-right: 20px
+      img
+        max-width: 100%
+        object-fit: cover
+        border-radius: 25px 25px 0 0
+        height: 250px
+
+
+
+
 
 @import "index/_media1200"
 @import "index/_media992"
