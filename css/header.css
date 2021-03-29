@@ -427,6 +427,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: relative;
 }
 
 .header-catalog .burger {
@@ -579,6 +580,16 @@ body {
 }
 
 .offer {
+  background-image: url(../img/header-mob.jpg);
+}
+
+@media (min-width: 768px) {
+  .offer {
+    background-image: url(../img/header.jpg);
+  }
+}
+
+.offer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -598,7 +609,6 @@ body {
           background-size: cover;
   -webkit-border-radius: 25px;
           border-radius: 25px;
-  background-image: url(../img/header.jpg);
   max-width: 1170px;
 }
 
@@ -615,6 +625,63 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   margin-bottom: 25px;
+}
+
+.header-down {
+  position: absolute;
+  left: 0;
+  top: -webkit-calc(100% + 15px);
+  top: calc(100% + 15px);
+  background-color: #fff;
+  z-index: 50;
+  padding: 40px 60px;
+  border: 1px solid #ECECEC;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  max-width: -webkit-calc(100vw - 30px);
+  max-width: calc(100vw - 30px);
+  display: none;
+  opacity: 1;
+}
+
+.header-down .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.header-down-item {
+  color: #373737;
+  margin-right: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.header-down-item ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.header-down-item b {
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: block;
+}
+
+.header-down-item:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 1199px) {
@@ -637,5 +704,207 @@ body {
   }
   .offer {
     max-width: 930px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    border-bottom: 1px solid #ECECEC;
+  }
+  .header-nav {
+    position: fixed;
+    top: -webkit-calc(100% + 1px);
+    top: calc(100% + 1px);
+    left: 60px;
+    display: none;
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+  .header-nav::after {
+    width: 120vw;
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: -65px;
+    background-color: #ECECEC;
+    height: 1px;
+  }
+  .header-nav ul li a {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .header-down {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    position: fixed;
+    border: 1px solid #fff;
+    padding-right: 100px;
+    top: -webkit-calc(100% + 1px);
+    top: calc(100% + 1px);
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 70px;
+  }
+  .header-down div:nth-child(2) {
+    display: block !important;
+  }
+  .header-down a {
+    font-size: 14px;
+  }
+  .header-down b {
+    font-size: 16px;
+  }
+  .header-logo {
+    margin-left: 60px;
+    margin-top: 3px;
+  }
+  .header .container {
+    max-width: 100%;
+  }
+  .header-catalog {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .header-catalog .burger {
+    margin: 0;
+  }
+  .header-catalog .burger span {
+    background-color: #004A2B;
+  }
+  .header-catalog div:nth-child(2) {
+    display: none;
+  }
+  .offer {
+    max-width: -webkit-calc(740px - 30px);
+    max-width: calc(740px - 30px);
+    background-position: -130px 0;
+  }
+  body {
+    padding-top: 63px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    left: 15px;
+  }
+  .header-down {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-down-item {
+    margin-right: 20px;
+  }
+  .offer {
+    max-width: -webkit-calc(540px - 30px);
+    max-width: calc(540px - 30px);
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 50px 40px;
+    background-position: center;
+    padding-bottom: 370px;
+  }
+}
+
+@media (max-width: 578px) {
+  .offer {
+    max-width: -webkit-calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    padding: 25px 25px;
+    padding-bottom: 240px;
+  }
+  .offer h1 {
+    font-size: 32px;
+  }
+  .offer p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header-down {
+    overflow-y: auto;
+  }
+  .header-down .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-down-item {
+    margin-bottom: 15px;
+  }
+  .header-nav {
+    padding-top: 15px;
+  }
+  .header-nav::after {
+    bottom: 0;
+  }
+  .header-nav ul li a {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .header-catalog {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-icons-item {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+  }
+  .header-icons-item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+  }
+  .header-logo {
+    margin-left: 40px;
+  }
+  .header-logo img {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 370px) {
+  .offer h1 {
+    font-size: 24px;
+  }
+  .offer p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header-nav ul li a {
+    margin-right: 8px;
+  }
+  .header-icons-item {
+    margin-left: 10px;
+  }
+  .header-logo img {
+    max-width: 125px;
   }
 }

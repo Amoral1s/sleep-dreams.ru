@@ -1,0 +1,65 @@
+@media (max-width: 992px)
+  .header
+    border-bottom: 1px solid $light
+    &-nav
+      position: fixed
+      top: calc(100% + 1px)
+      left: 60px
+      display: none
+      background-color: #fff
+      padding-bottom: 15px
+      padding-top: 25px
+      &::after
+        width: 120vw
+        content: ''
+        position: absolute
+        bottom: 3px
+        left: -65px
+        background-color: $light
+        height: 1px
+      ul
+        li
+          a
+            margin-left: 0
+            margin-right: 20px
+    &-down
+      border-radius: 0
+      position: fixed
+      border: 1px solid #fff
+      padding-right: 100px
+      top: calc(100% + 1px)
+      width: 100vw
+      max-width: 100vw
+      height: 100vh
+      border-bottom: 1px solid $light
+      padding-top: 70px
+      div:nth-child(2)
+        display: block!important
+      a
+        font-size: 14px
+      b
+        font-size: 16px
+    &-logo
+      margin-left: 60px
+      margin-top: 3px
+    .container
+      max-width: 100%
+    &-catalog
+      background-color: #fff
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      .burger
+        margin: 0
+        span
+          background-color: $main
+      div:nth-child(2)
+        display: none
+      
+
+  .offer
+    max-width: calc(740px - 30px)
+    background-position: -130px 0    
+  body
+    padding-top: 63px

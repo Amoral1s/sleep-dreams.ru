@@ -31,6 +31,7 @@ body
     cursor: pointer
     font-size: 18px
     user-select: none
+    position: relative
     .burger
       margin-right: 25px
       width: 20px
@@ -105,7 +106,11 @@ body
         top: -7px
         font-size: 10px
         color: $dark
-
+.offer
+  background-image: url(../img/header-mob.jpg)
+@media (min-width: 768px)
+  .offer
+    background-image: url(../img/header.jpg)
 .offer
   display: flex
   flex-direction: column
@@ -114,7 +119,6 @@ body
   background-repeat: no-repeat
   background-size: cover
   border-radius: 25px
-  background-image: url(../img/header.jpg)
   max-width: 1170px
   h1
     font-size: 48px
@@ -127,6 +131,43 @@ body
     font-family: $font
     font-size: 24px
     margin-bottom: 25px
+
+.header-down
+  position: absolute
+  left: 0
+  top: calc(100% + 15px)
+  background-color: #fff
+  z-index: 50
+  padding: 40px 60px
+  border: 1px solid $light
+  border-radius: 25px
+  max-width: calc(100vw - 30px)
+  display: none
+  opacity: 1
+  .wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+  &-item
+    color: $dark
+    margin-right: 50px
+    width: max-content
+    ul
+      li
+        a
+          font-weight: 400
+          font-size: 16px
+          margin-bottom: 10px
+          display: block
+    b
+      margin-bottom: 20px
+      font-size: 18px
+      display: block
+    &:last-child
+      margin-right: 0
+
+
+
 
 @import "header/_media1200"
 @import "header/_media992"
